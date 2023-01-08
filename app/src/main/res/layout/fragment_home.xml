@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/load_image"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cameraButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/launch_camera"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="100dp"
+        android:background="@color/Red"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/translateButton"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="120dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/translate2"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarPitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="138dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginStart="120dp"
+        android:text="@string/output"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <SeekBar
+        android:id="@+id/seekBarPitch"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <SeekBar
+        android:id="@+id/seekBarSpeed"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="700dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</FrameLayout>

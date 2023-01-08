@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Detection</string>
+    <string name="output">Output:</string>
+    <string name="todo">TODO</string>
+    <string name="launch_camera">Launch Camera</string>
+    <string name="load_image">Load Image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="translated_output">Translated Output</string>
+    <string name="imageArrow">imageArrow</string>
+    <string name="or">OR</string>
+    <string name="image">image</string>
+    <string name="translate">Translate</string>
+    <string name="translate2">Translate</string>
+    <string name="goBackBtn" />
+    <string name="go_back">Go Back</string>
+</resources>
